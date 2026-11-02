@@ -7,15 +7,21 @@
 </head>
 <body>
     <div style="border:2px solid black; padding:5px;">
-    <form style="text-align: center;">
+    <form style="text-align: center;" action="#" method="get">
+
+        <!--action attribute specifies where the form data will be submitted-->
+        <!--method attribute specifies how the form data will be sent to the server-->
+        
         <h1>Hotel Room Booking Form</h1>
         <fieldset>
-        <p>Full Name: <input type="text" name="fullName" required></p>
-        <p>Email: <input type="email" name="email" required></p>
-        <p>Phone Number: <input type="tel" name="phoneNumber" required></p>
+            <legend>Personal Information</legend>
+            <p>Full Name: <input type="text" name="fullName" required></p>
+            <p>Email: <input type="email" name="email" required></p>
+            <p>Phone Number: <input type="tel" name="phoneNumber" required></p>
+        </fieldset>
+        
         <p>Check-in Date: <input type="date" name="checkInDate" required></p>
         <p>Check-out Date: <input type="date" name="checkOutDate" required></p>
-        </fieldset>
         <p>Room Type:
             <select name="roomType">
                 <option value="single">Single Room</option>
