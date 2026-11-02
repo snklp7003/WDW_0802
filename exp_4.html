@@ -9,15 +9,19 @@
     <div style="border:2px solid black; padding:5px;">
     <form style="text-align: center;">
         <h1>Hotel Room Booking Form</h1>
-        <p>Full Name: <input type="text" name="fullName"></p>
-        <p>Email: <input type="email" name="email"></p>
-        <p>Phone Number: <input type="tel" name="phoneNumber"></p>
-        <p>Check-in Date: <input type="date" name="checkInDate"></p>
-        <p>Check-out Date: <input type="date" name="checkOutDate"></p>
+        <fieldset>
+        <p>Full Name: <input type="text" name="fullName" required></p>
+        <p>Email: <input type="email" name="email" required></p>
+        <p>Phone Number: <input type="tel" name="phoneNumber" required></p>
+        <p>Check-in Date: <input type="date" name="checkInDate" required></p>
+        <p>Check-out Date: <input type="date" name="checkOutDate" required></p>
+        </fieldset>
         <p>Room Type:
             <select name="roomType">
                 <option value="single">Single Room</option>
                 <option value="double">Double Room</option>
+                <option value="single Ac">single Ac</option>
+                <option value="double Ac">Double Ac</option>
                 <option value="non-ac">Non-Air Conditioned Room</option>
             </select>
         </p>
