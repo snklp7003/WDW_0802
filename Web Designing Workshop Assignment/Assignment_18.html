@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 18</title>
+</head>
+<body>
+    <header style=" background-color: navy; color: white; text-align: center;padding: 15px;">
+   <h1 >ABC College Admission 2026</h1> 
+</header>
+<main>
+    <h2>Courses and Fees</h2>
+    <table border="1"style="width: 100%;border-collapse: collapse;margin-bottom: 20px;" >
+        <caption>Available Courses</caption>
+        <tr>
+            <th style="background-color: #e8e8f2;">Courses</th>
+            <th style="background-color: #e8e8f2;">Seats</th>
+            <th style="background-color: #e8e8f2;">Fees</th>
+        </tr>
+        <tr>
+            <td>B.Tech CSE</td>
+            <td>120</td>
+            <td>₹90,000</td>
+        </tr>
+        <tr>
+            <td>BCA</td>
+            <td>60</td>
+            <td>₹45,000</td>
+        </tr>
+    </table>
+    <form>
+      <fieldset>
+        <legend>Application Form</legend>
+        <lebel for="name">Name:</lebel><br>
+        <input type="text" name="name" id="name">
+        <br><br>
+        <lebel for="email">Email:</lebel><br>
+        <input type="email" name="email" id="email"><br><br>
+        <lebel for="course">Course:</lebel><br>
+        <select id="course" name="course">
+            <option value="b.tech cse">B.tech CSE</option>
+            <option value="b.tech cse">B.tech AI-ML</option>
+            <option value="b.tech cse">B.tech Mechanical</option>
+            <option value="b.tech cse">B.tech Electrical</option>
+        </select>
+        <br><br>
+       <label for="statement">Statement:</label>
+                <br><textarea id="statement"name="statement"rows="5" cols="40"></textarea>
+
+                <br><br>
+       <button type="submit">Apply</button>
+      </fieldset>  
+    </form>
+    <footer style="background-color: navy; color: white;">
+        <p align="center">&copy; 2026 ABC College</p>
+    </footer>
+</main>
+</body>
+</html>
